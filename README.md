@@ -38,11 +38,16 @@ Antes de executar o projeto, certifique-se de ter o seguinte instalado:
 
 ## Configuração do Banco de Dados
 
-Este projeto usa um banco de dados em memória H2 para desenvolvimento e testes. A configuração está definida em `src/main/resources/application.properties`:
+Este projeto usa PostgreSQL como banco de dados. Siga estas etapas para configurar o PostgreSQL e criar a tabela necessária.
 
-```properties
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driver-class-name=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=password
-spring.datasource.initialization-mode=always
+1. **Atualize o arquivo `application.properties`** para se conectar ao PostgreSQL:
+
+    ```properties
+    spring.datasource.url=jdbc:postgresql://localhost:5432/seu_banco_de_dados
+    spring.datasource.username=seu_usuario
+    spring.datasource.password=sua_senha
+    spring.datasource.driver-class-name=org.postgresql.Driver
+    spring.jpa.hibernate.ddl-auto=none
+    ```
+
+    Substitua `localhost:5432`, `seu_banco_de_dados`, `seu_usuario` e `sua_senha` pelos detalhes da sua instância PostgreSQL.
