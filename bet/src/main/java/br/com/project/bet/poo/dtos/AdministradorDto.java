@@ -16,16 +16,16 @@ public class AdministradorDto extends PessoaDto {
 		this.idPessoa = idPessoa;
 	}
 	
-	public void cadastrarEvento(EventoDto evento) {
+	public void cadastrarEvento(Evento evento) {
 		
 	}
 	
-	public EventoDto editarEvento(EventoDto evento) {
+	public Evento editarEvento(Evento evento) {
 		return null;
 		
 	}
 	
-	public void excluirEvento(EventoDto evento) {
+	public void excluirEvento(Evento evento) {
 		
 	}
 	

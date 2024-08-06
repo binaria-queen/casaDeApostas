@@ -80,7 +80,7 @@ public class ApostaDto {
 		this.status = status;
 	}
 	
-	public void addEventos(EventoDto dto) {
+	public void addEventos(Evento dto) {
 		
 	}
 	
